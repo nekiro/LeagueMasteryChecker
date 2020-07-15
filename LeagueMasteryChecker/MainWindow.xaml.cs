@@ -42,7 +42,7 @@ namespace LeagueMasteryChecker
         {
             InitializeComponent();
             LocationChanged += MainWindow_LocationChanged;
-            riotApi = RiotApi.GetDevelopmentInstance("RGAPI-9bbe30f6-37c6-443e-8850-a1d001e4dc47");
+            riotApi = RiotApi.GetDevelopmentInstance("YOUR_API_KEY");
             champList = new List<Champ>();
             masteryWindow = new MasteryPodium();
         }
@@ -335,7 +335,7 @@ namespace LeagueMasteryChecker
             Champ topChamp = newList[0];
             if (topChamp != null)
             {
-                masteryWindow.Dispatcher.Invoke(() => { 
+                masteryWindow.Dispatcher.Invoke(() => {
                     masteryWindow.Top1Icon.Source = LoadChampImage(topChamp.Name);
                     masteryWindow.Top1Pts.Text = topChamp.masteryPoints + " points";
                     masteryWindow.Top1ToGo.Text = topChamp.masteryPointsUntilNextLvl + " to go";
