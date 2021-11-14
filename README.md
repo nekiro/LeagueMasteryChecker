@@ -3,6 +3,11 @@ Simple application that let you see your champion mastery points, it also has po
 It was originally designed for my girlfriend for streaming purposes as HUD for currently grinded champions, but it can be also used to look up your mastery points pretty quickly.
 All points, levels, images are extracted using riot api with helper library [RiotSharp](https://github.com/BenFradet/RiotSharp).
 
+C# and earlier version of https://github.com/nekiro/Lol-Mastery-Checker
+
+## Stack
+- 100% C# (WPF, LINQ)
+
 ## Compiling
 This repository uses Net Framework 4.7.2, so to be able to compile it make sure you have this installed in your visual studio 2019.
 Just launch .sln file and hit build, that's it!
